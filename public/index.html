@@ -1,0 +1,124 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>News Website</title>
+  <link rel="stylesheet" href="/stylesheets/output.css">
+</head>
+
+<body class="m-8 md:container md:mx-auto text-sm ">
+  <header class="flex justify-between py-12">
+    <!-- Logo -->
+    <a class="flex-auto" href="/"><img src="/images/logo.svg" alt ="W News"></a>
+
+    <!-- overlay -->
+    <div id="overlay" class="hidden fixed bg-very-dark-blue bg-opacity-80 h-svh w-full top-0 left-0"></div>
+
+    <!-- navbar -->
+    <nav id="mainnav" class="hidden fixed px-8 md:px-0 h-svh w-3/4 right-0 top-0 bg-off-white md:h-auto md:static md:block flex-auto content-center">
+      <button id="closebtn" class="hidden absolute top-8 right-4"><img src="/images/icon-menu-close.svg"></button>
+      <ul class="flex justify-between flex-col md:flex-row md:justify-end gap-10 text-md md:text-sm font-bold md:font-normal">
+        <a href="" class="text-dark-grayish-blue hover:text-soft-orange transition-colors duration-300"><li>Home</li></a>
+        <a href="" class="text-dark-grayish-blue hover:text-soft-orange transition-colors duration-300"><li>New</li></a>
+        <a href="" class="text-dark-grayish-blue hover:text-soft-orange transition-colors duration-300"><li>Popular</li></a>
+        <a href="" class="text-dark-grayish-blue hover:text-soft-orange transition-colors duration-300"><li>Trending</li></a>
+        <a href="" class="text-dark-grayish-blue hover:text-soft-orange transition-colors duration-300"><li>Categories</li></a>
+      </ul>
+    </nav>
+    <!-- nav toggle -->
+    <div class="md:hidden flex-auto flex justify-end">
+      <button id="navtoggle"><img class ="h-[20]" src="images/icon-menu.svg"></button>
+    </div>
+  </header>
+  <main>
+    <div class="flex flex-col md:flex-row gap-10 mb-12">
+      <section class="basis-2/3 flex flex-col justify-between gap-10">
+        <picture>
+          <source srcset="/images/image-web-3-desktop.jpg" media="(min-width:640px)">
+          <img src="/images/image-web-3-mobile.jpg" alt="Web3 abstract image">
+        </picture>
+        
+        <div class="flex flex-col md:flex-row gap-4">
+          <h1 class="flex-1 text-xl font-extrabold">The Bright Future of Web 3.0?</h1>
+          <article class="flex-1 flex flex-col justify-between gap-6">
+            <p class="text-dark-grayish-blue">We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+              But is it really fulfilling its promise?</p>
+            <div>
+              <button class="bg-soft-red hover:bg-very-dark-blue transition-colors duration-300 text-off-white uppercase px-8 py-3 font-bold tracking-widest">Read more</button>
+            </div>
+            
+          </article>
+        </div>
+        
+      </section>
+
+      <aside class="basis-1/3 flex flex-col justify-between bg-very-dark-blue text-off-white p-6">
+        <p class="text-soft-orange text-lg font-bold">New</p> 
+        
+        <article class="my-4">
+          <a class="hover:text-soft-orange transition-colors duration-300" href=""><h2 class="text-md font-bold my-2">Hydrogen VS Electric Cars</h2></a>
+          <p class="text-grayish-blue text-sm">Will hydrogen-fueled cars ever catch up to EVs?</p>
+        </article>
+        
+        <hr class="text-dark-grayish-blue my-2">
+
+        <article class="my-4">
+          <a class="hover:text-soft-orange transition-colors duration-300" href=""><h2 class="text-md font-bold my-2">The Downsides of AI Artistry</h2></a>
+          <p class="text-grayish-blue">What are the possible adverse effects of on-demand AI image generation?</p>
+        </article>
+
+        <hr class="text-dark-grayish-blue my-2">
+
+        <article class="my-4">
+          <a class="hover:text-soft-orange transition-colors duration-300" href=""><h2 class="text-md font-bold my-2">Is VC Funding Drying Up?</h2></a>
+          <p class="text-grayish-blue">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+        </article>
+      </aside>
+    </div>
+
+    <section class="flex flex-col md:flex-row my-8">
+
+      <div class="flex-1 flex">
+        <div class="flex-auto shrink-0">
+          <img class="h-[128]" src="/images/image-retro-pcs.jpg">
+        </div>
+        <article class="px-6 flex-auto flex flex-col">
+          <p class="text-grayish-blue font-bold text-lg">01</p>
+          <a class=" text-very-dark-blue hover:text-soft-orange transition-colors duration-300" href=""><h2 class="text-md font-bold">Reviving Retro PCs</h2></a>
+          <p class="text-dark-grayish-blue">What happens when old PCs are given modern upgrades?</p>
+        </article>
+      </div>
+      
+      <div class="flex-1 flex">
+        <div class="flex-auto shrink-0">
+          <img class="h-[128]" src="/images/image-top-laptops.jpg">
+        </div>
+        <article class="px-6 flex-auto flex flex-col justify-between">
+          <p class="text-grayish-blue font-bold text-lg">02</p>
+          <a class=" text-very-dark-blue hover:text-soft-orange transition-colors duration-300" href=""><h2 class="text-md font-bold">Top 10 Laptops of 2022</h2></a>
+          <p class="text-dark-grayish-blue">Our best picks for various needs and budgets.</p>
+        </article>
+      </div>
+
+      <div class="flex-1 flex">
+        <div class="flex-auto shrink-0">
+          <img class="h-[128]" src="/images/image-gaming-growth.jpg">
+        </div>
+        <article class="px-6 flex-auto flex flex-col justify-between">
+          <p class="text-grayish-blue font-bold text-lg">03</p>
+          <a class=" text-very-dark-blue hover:text-soft-orange transition-colors duration-300" href=""><h2 class="text-md font-bold">The Growth of Gaming</h2></a>
+          <p class="text-dark-grayish-blue">How the pandemic has sparked fresh opportunities.</p>
+        </article>
+      </div>
+    
+    </section>
+  </main>
+<footer class="py-8 text-right text-sm text-grayish-blue">
+  <p>A <a href="https://www.frontendmentor.io/" class="underline hover:text-soft-orange">FrontendMentor.io</a> challenge. Created by <a href="https://www.christian-bell.com/" class="underline hover:text-soft-orange">Christian Bell</a> using <a href="https://tailwindcss.com/" class="underline hover:text-soft-orange">Tailwind CSS</a></p>
+</footer>
+
+<script type="text/javascript" src="javascripts/common.js"></script>
+</body>
+</html>
