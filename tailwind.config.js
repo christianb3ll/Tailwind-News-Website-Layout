@@ -11,7 +11,7 @@ module.exports = {
       'very-dark-blue': '#00001a'
     },
     fontFamily: {
-      'sans': 'Inter'
+      'sans': ["'Inter'", 'sans-serif']
     },
     fontSize: {
       'sm': '15px',

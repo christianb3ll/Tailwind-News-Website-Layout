@@ -1,8 +1,10 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
   <title>News Website</title>
   <link rel="stylesheet" href="./stylesheets/output.css">
@@ -18,41 +20,43 @@
 
     <!-- navbar -->
     <nav id="mainnav" class="hidden fixed px-8 md:px-0 h-svh w-3/4 right-0 top-0 bg-off-white md:h-auto md:static md:block flex-auto content-center">
-      <button id="closebtn" class="hidden absolute top-8 right-4"><img src="./images/icon-menu-close.svg"></button>
+      <button id="closebtn" aria-label="Close menu" class="hidden absolute top-8 right-4"><img src="./images/icon-menu-close.svg" alt=""></button>
       <ul class="flex justify-between flex-col md:flex-row md:justify-end gap-10 text-md md:text-sm font-bold md:font-normal">
-        <a href="" class="text-dark-grayish-blue hover:text-soft-orange transition-colors duration-300"><li>Home</li></a>
-        <a href="" class="text-dark-grayish-blue hover:text-soft-orange transition-colors duration-300"><li>New</li></a>
-        <a href="" class="text-dark-grayish-blue hover:text-soft-orange transition-colors duration-300"><li>Popular</li></a>
-        <a href="" class="text-dark-grayish-blue hover:text-soft-orange transition-colors duration-300"><li>Trending</li></a>
-        <a href="" class="text-dark-grayish-blue hover:text-soft-orange transition-colors duration-300"><li>Categories</li></a>
+        <li><a href="" class="text-dark-grayish-blue hover:text-soft-orange transition-colors duration-300">Home</a></li>
+        <li><a href="" class="text-dark-grayish-blue hover:text-soft-orange transition-colors duration-300">New</a></li>
+        <li><a href="" class="text-dark-grayish-blue hover:text-soft-orange transition-colors duration-300">Popular</a></li>
+        <li><a href="" class="text-dark-grayish-blue hover:text-soft-orange transition-colors duration-300">Trending</a></li>
+        <li><a href="" class="text-dark-grayish-blue hover:text-soft-orange transition-colors duration-300">Categories</a></li>
       </ul>
     </nav>
     <!-- nav toggle -->
     <div class="md:hidden flex-auto flex justify-end">
-      <button id="navtoggle"><img class ="h-[20]" src="./images/icon-menu.svg"></button>
+      <button id="navtoggle" aria-label="Open menu"><img class ="h-[20]" src="./images/icon-menu.svg" alt=""></button>
     </div>
   </header>
   <main>
     <div class="flex flex-col md:flex-row gap-10 mb-12">
-      <section class="basis-2/3 flex flex-col justify-between gap-10">
+      <div class="basis-2/3 flex flex-col justify-between gap-10">
         <picture>
           <source srcset="./images/image-web-3-desktop.jpg" media="(min-width:640px)">
           <img src="./images/image-web-3-mobile.jpg" alt="Web3 abstract image">
         </picture>
         
-        <div class="flex flex-col md:flex-row gap-4">
-          <h1 class="flex-1 text-xl font-extrabold">The Bright Future of Web 3.0?</h1>
-          <article class="flex-1 flex flex-col justify-between gap-6">
-            <p class="text-dark-grayish-blue">We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
-              But is it really fulfilling its promise?</p>
-            <div>
-              <button class="bg-soft-red hover:bg-very-dark-blue transition-colors duration-300 text-off-white uppercase px-8 py-3 font-bold tracking-widest">Read more</button>
+        <div class="">
+          <article class="flex flex-col md:flex-row gap-4">
+            <h1 id="lead-article" class="flex-1 text-xl font-extrabold">The Bright Future of Web 3.0?</h1>
+            <div class="flex-1 flex flex-col justify-between gap-6">
+              <p class="text-dark-grayish-blue">We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people.
+                But is it really fulfilling its promise?</p>
+              <div>
+                <a aria-describedby="lead-article" class="bg-soft-red hover:bg-very-dark-blue transition-colors duration-300 text-off-white uppercase px-8 py-3 font-bold tracking-widest">Read more</a>
+              </div>
             </div>
             
           </article>
         </div>
         
-      </section>
+      </div>
 
       <aside class="basis-1/3 flex flex-col justify-between bg-very-dark-blue text-off-white p-6">
         <p class="text-soft-orange text-lg font-bold">New</p> 
@@ -82,7 +86,7 @@
 
       <div class="flex-1 flex">
         <div class="flex-auto shrink-0">
-          <img class="h-[128]" src="./images/image-retro-pcs.jpg">
+          <img class="h-[128]" src="./images/image-retro-pcs.jpg" alt="Retro computer tech">
         </div>
         <article class="px-6 flex-auto flex flex-col">
           <p class="text-grayish-blue font-bold text-lg">01</p>
@@ -93,7 +97,7 @@
       
       <div class="flex-1 flex">
         <div class="flex-auto shrink-0">
-          <img class="h-[128]" src="./images/image-top-laptops.jpg">
+          <img class="h-[128]" src="./images/image-top-laptops.jpg" alt="Laptop keyboard closeup">
         </div>
         <article class="px-6 flex-auto flex flex-col justify-between">
           <p class="text-grayish-blue font-bold text-lg">02</p>
@@ -104,7 +108,7 @@
 
       <div class="flex-1 flex">
         <div class="flex-auto shrink-0">
-          <img class="h-[128]" src="./images/image-gaming-growth.jpg">
+          <img class="h-[128]" src="./images/image-gaming-growth.jpg" alt="Hand tossing a game controllet">
         </div>
         <article class="px-6 flex-auto flex flex-col justify-between">
           <p class="text-grayish-blue font-bold text-lg">03</p>
@@ -119,6 +123,6 @@
   <p>A <a href="https://www.frontendmentor.io/" class="underline hover:text-soft-orange">FrontendMentor.io</a> challenge. Created by <a href="https://www.christian-bell.com/" class="underline hover:text-soft-orange">Christian Bell</a> using <a href="https://tailwindcss.com/" class="underline hover:text-soft-orange">Tailwind CSS</a></p>
 </footer>
 
-<script type="text/javascript" src="javascripts/common.js"></script>
+<script src="javascripts/common.js"></script>
 </body>
 </html>
